@@ -1,0 +1,123 @@
+.container {
+  max-width: 120rem;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+  height: 100vh;
+}
+.coronaContainer {
+  box-shadow: 20;
+  display: flex;
+  justify-content: center;
+}
+.coronaHeading {
+  width: 80rem;
+  background-color: rgba(225, 225, 225, 0.1);
+  padding: 10px;
+  border-radius: 20rem;
+  margin-top: 20px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 2.7rem;
+}
+.summaryContainer {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: rgba(20, 36, 46, 0.2);
+  margin: 0 2rem;
+  margin-top: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.summaryResultText {
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.summaryResultText > h2 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.MuiPaper-root {
+  background-color: rgba(20, 36, 46, 0.4) !important;
+  box-shadow: 4px 10px 40px rgba(0, 0, 0, 0.5) !important;
+}
+table {
+  border: none !important;
+  font-size: "2rem";
+}
+.MuiTableCell-root {
+  border-bottom: none !important;
+}
+
+.tableHeading {
+  font-size: 1.5rem !important;
+  color: #ffffff !important;
+}
+.tableRowHeading {
+  font-size: 1.5rem !important;
+  color: #ffffff !important;
+  font-weight: lighter !important;
+}
+.footer {
+  margin-top: 5rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+  .summaryContainer {
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .summaryResultText {
+    padding: 1rem;
+  }
+  .summaryResultText > h2 {
+    font-size: 1.4rem !important;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+  .MuiTableCell-root {
+    padding: 20px 0px !important;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .quote {
+    margin-bottom: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .summaryContainer {
+    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+  }
+
+  .summaryResultText {
+    padding: 1rem;
+  }
+  .summaryResultText > h2 {
+    font-size: 1.4rem !important;
+  }
+  .MuiTableCell-root {
+    padding: 15px 8px !important;
+  }
+}
