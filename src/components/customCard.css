@@ -1,0 +1,12 @@
+.searchInput {
+  width: 70%;
+  padding: 1.4rem 2rem;
+  border: none;
+  box-shadow: 0.2rem 0.4rem 0.9rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s;
+}
+.searchinput:focus {
+  outline-color: blueviolet;
+  outline-width: 1px;
+  box-shadow: 0.2rem, 1.5rem 1rem;
+}
