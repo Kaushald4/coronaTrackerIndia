@@ -10,3 +10,19 @@
     padding: 1rem 2rem;
   }
 }
+/* state specific fill color */
+/* #mp.svg-map__location {
+  fill: green !important;
+} */
+.svg-map {
+  stroke: #c6c6c7 !important;
+}
+.svg-map__location {
+  fill: #31373f !important;
+}
+.svg-map__location:hover {
+  fill: #7a7b7c !important;
+}
+.svg-map__location:focus {
+  fill: #7a7b7c !important;
+}

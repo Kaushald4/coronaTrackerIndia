@@ -40,7 +40,11 @@ export default function CustomMap(props) {
         <p style={{ fontSize: "4rem", paddingBottom: "3.7rem" }}>
           Intractive Map
         </p>
-        <RadioSVGMap map={India} onLocationMouseOver={e => handleChange(e)} />
+        <RadioSVGMap
+          className="svg-map"
+          map={India}
+          onLocationMouseOver={e => handleChange(e)}
+        />
         <div
           className="mapToolTip"
           style={{
