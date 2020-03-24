@@ -2,7 +2,7 @@
   max-width: 120rem;
   margin: auto;
   text-align: center;
-  color: #0a1433;
+  color: #31373f;
   font-size: 1.6rem;
   height: 100vh;
 }
@@ -13,41 +13,100 @@
 }
 .coronaHeading {
   width: 80rem;
-  background-color: rgb(224, 10, 79);
   padding: 10px;
-  margin-top: 20px;
-  box-shadow: 5px 10px 10px rgba(224, 10, 79, 0.4);
-  font-family: "Poppins";
+  margin-top: 4rem;
+  font-family: "Fredoka One";
   font-weight: normal;
-  font-size: 2.7rem;
+  font-size: 2.9rem;
   margin-left: 10px;
   margin-right: 10px;
+  color: #31373f;
+  letter-spacing: 0.2rem;
+  max-width: 50rem;
+}
+.data-source-btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+.data-source-btn > button {
+  padding: 1rem 4rem;
+  border: none;
+  background-color: #31373f;
+  box-shadow: 0.4rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  margin: 2rem 0.2rem;
   color: #ffffff;
-  max-width: 25rem;
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.data-source {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 2.7rem;
+  padding: 0 1rem;
+}
+.data-source > a {
+  text-decoration: none;
+  padding-left: 5px;
+  color: #247ba0;
 }
 .summaryContainer {
   flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 1rem;
   background-color: rgba(250, 243, 243, 0.5);
   box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.4);
   max-width: 70rem;
-  margin: 4rem auto;
+  margin: 2rem auto;
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 .summaryResultText {
   padding: 2rem;
   border-radius: 2rem;
 }
 .summaryResultText > h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 .MuiPaper-root {
   background-color: rgba(250, 243, 243, 0.5) !important;
   box-shadow: 4px 10px 40px rgba(0, 0, 0, 0.5) !important;
 }
+.mychart {
+  background-color: rgb(250, 243, 243);
+  box-shadow: 0.1rem 0.8rem 4rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 8rem;
+}
+.analytics-show-btn {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+.analytics-show-btn > button {
+  background-color: rgba(250, 243, 243, 0.5);
+  border: none;
+  display: flex;
+  color: #31373f;
+  box-shadow: 0.1rem 0.8rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 1rem 4rem;
+  width: 100%;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+.analytics-show-btn > button:active {
+  transform: scale(0.8);
+  border: none;
+  outline: none;
+}
+.analytics-show-btn > button:focus {
+  border: none;
+  outline: none;
+}
+
 table {
   border: none !important;
   font-size: "2rem";
@@ -58,12 +117,37 @@ table {
 
 .tableHeading {
   font-size: 1.5rem !important;
-  color: #000000 !important;
+  color: #247ba0 !important;
 }
 .tableRowHeading {
   font-size: 1.5rem !important;
   color: #000000 !important;
   font-weight: lighter !important;
+}
+/*Adive - Section */
+.adviceContainer {
+  background-color: rgba(250, 243, 243, 0.5);
+  padding: 4rem 2px;
+  margin: 8rem 1.4rem;
+  border-radius: 2rem;
+  box-shadow: 0.4rem 0.7rem 4rem rgba(0, 0, 0, 0.4);
+}
+.pretective-mesaureContainer > p {
+  font-size: 3.4rem;
+  margin-bottom: 3rem;
+}
+.adviceListContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4rem;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.adviceContainerQuote {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  margin-bottom: 6rem;
 }
 .footer {
   margin-top: 5rem;
@@ -80,20 +164,30 @@ table {
   .coronaHeading {
     max-width: 50rem;
   }
+  .data-source {
+    margin-top: 1.5rem;
+  }
   .summaryContainer {
     overflow: hidden;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 40rem;
   }
   .summaryResultText {
     padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: normal;
   }
   .summaryResultText > h2 {
-    font-size: 1.4rem !important;
-    font-weight: bold;
+    font-size: 1.5rem !important;
     letter-spacing: 0.1rem;
+    font-weight: bold;
   }
+  .data-source-btn {
+    display: flex;
+    justify-content: center;
+  }
+
   .MuiTableCell-root {
     padding: 20px 0px !important;
   }

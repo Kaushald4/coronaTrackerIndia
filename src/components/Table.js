@@ -45,30 +45,33 @@ export default function CustomTable(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {report.data.regional.map(row => (
-            <TableRow key={row.loc}>
-              <TableCell
-                component="th"
-                className="tableRowHeading"
-                scope="row"
-                align="center"
-              >
-                {row.loc}
-              </TableCell>
-              <TableCell className="tableRowHeading" align="center">
-                {row.confirmedCasesIndian}
-              </TableCell>
-              <TableCell className="tableRowHeading" align="center">
-                {row.discharged}
-              </TableCell>
-              <TableCell className="tableRowHeading" align="center">
-                {row.confirmedCasesForeign}
-              </TableCell>
-              <TableCell className="tableRowHeading" align="center">
-                {row.deaths}
-              </TableCell>
-            </TableRow>
-          ))}
+          {report.data.regional
+            .sort((a, b) => b.confirmedCasesIndian - a.confirmedCasesIndian)
+            .map(row => (
+              <TableRow key={row.loc}>
+                <TableCell
+                  style={{ maxWidth: "60px" }}
+                  component="th"
+                  className="tableRowHeading"
+                  scope="row"
+                  align="center"
+                >
+                  {row.loc}
+                </TableCell>
+                <TableCell className="tableRowHeading" align="center">
+                  {row.confirmedCasesIndian}
+                </TableCell>
+                <TableCell className="tableRowHeading" align="center">
+                  {row.discharged}
+                </TableCell>
+                <TableCell className="tableRowHeading" align="center">
+                  {row.confirmedCasesForeign}
+                </TableCell>
+                <TableCell className="tableRowHeading" align="center">
+                  {row.deaths}
+                </TableCell>
+              </TableRow>
+            ))}
         </TableBody>
       </Table>
     </TableContainer>

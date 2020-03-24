@@ -1,0 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .myMapContainer {
+    height: auto !important;
+  }
+  .myMap {
+    padding: 3.7rem 2rem;
+  }
+  .mapToolTip {
+    width: auto !important;
+    padding: 1rem 2rem;
+  }
+}

@@ -7,22 +7,24 @@
   align-items: center;
 }
 .Showbutton > button {
-  background-color: blueviolet;
-  color: #ffffff;
+  background-color: rgb(245, 245, 245);
+  color: #31373f;
   font-size: 1.5rem;
   padding: 1rem 4rem;
   border: none;
   margin-top: 1.5rem;
-  box-shadow: 0.2rem 0.9rem 2rem rgb(131, 84, 163);
+  box-shadow: 0.2rem 0.9rem 2rem rgba(0, 0, 0, 0.2);
   justify-content: center;
   align-items: center;
   display: flex;
+  border-radius: 4px;
   transition: all 0.4s;
   cursor: pointer;
+  border: 1px solid #31373f;
 }
 
 .Showbutton > button:hover {
-  box-shadow: 0.2rem 0.9rem 4rem rgb(131, 84, 163);
+  box-shadow: 0.2rem 0.9rem 4rem rgba(0, 0, 0, 0.5);
   transform: scale(0.9);
 }
 .Showbutton > button:focus {
